@@ -5,9 +5,13 @@ import styled from "styled-components";
 import SEO from "../components/SEO";
 
 const PizzaGrid = styled.div`
+  --size: 400px;
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(var(--size), 1fr));
+  @media (max-width: 475px) {
+    --size: 285px;
+  }
 `;
 
 export default function SinglePizzaPage({ data: { pizza } }) {

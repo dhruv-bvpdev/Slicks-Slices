@@ -13,7 +13,7 @@ import calculateOrderTotal from "../utils/calculateOrderTotal";
 
 const OrderPage = ({ data }) => {
   const pizzas = data.pizzas.nodes;
-  const { values, updateValue } = useForm({ name: "", value: "", shehad: "" });
+  const { values, updateValue } = useForm({ name: "", email: "", shehad: "" });
   const {
     order,
     addToOrder,
