@@ -26,7 +26,6 @@ const SingleBeerStyles = styled.div`
 `;
 
 const BeersPage = ({ data }) => {
-  console.log(data);
   return (
     <>
       <SEO title={`Beers! We have ${data.beers.nodes.length} in stock`} />
@@ -35,7 +34,6 @@ const BeersPage = ({ data }) => {
       </h2>
       <BeerGridStyles>
         {data.beers.nodes.map((beer) => {
-          console.log(beer);
           return (
             <SingleBeerStyles key={beer.id}>
               <img src={beer.image} alt={beer.name} />
