@@ -1,0 +1,14 @@
+{
+  "name": "placeorder",
+  "version": "1.0.0",
+  "description": "Node Mailer for slicks slices",
+  "main": "placeOrder.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dhruv",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^6.7.2"
+  }
+}
